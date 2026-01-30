@@ -1,6 +1,6 @@
 # 🎙️ Speech-to-Speech Translation System
 
-<a href='https://heyneo.so/'>**Built by NEO** </a>- An autonomous ML agent that designs, optimizes, and deploys production-ready AI pipelines
+<a href='https://heyneo.so/' target="_blank">**Built by NEO** </a>- An autonomous ML agent that designs, optimizes, and deploys production-ready AI pipelines
 
 [![Performance](https://img.shields.io/badge/latency-2.75s-brightgreen)]()
 [![CPU Only](https://img.shields.io/badge/hardware-CPU%20only-blue)]()
