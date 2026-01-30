@@ -1,0 +1,27 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Models and heavy weights (common patterns)
+models/
+weights/
+checkpoint/
+.cache/
+huggingface/
+
+# Data and Outputs
+data_temp/
+outputs/*.wav
+
+# IDE settings
+.vscode/
+.idea/
+
+# Performance logs
+*.log
