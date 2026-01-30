@@ -1,27 +1,33 @@
-# Virtual environment
-venv/
-.venv/
-env/
-
-# Python cache
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Models and heavy weights (common patterns)
-models/
-weights/
-checkpoint/
-.cache/
-huggingface/
+# Virtual Environment
+venv/
+ENV/
 
-# Data and Outputs
+# Project Specific
 data_temp/
-outputs/*.wav
-
-# IDE settings
-.vscode/
-.idea/
-
-# Performance logs
-*.log
+outputs/
+*.wav
+benchmark_report.txt
+.DS_Store

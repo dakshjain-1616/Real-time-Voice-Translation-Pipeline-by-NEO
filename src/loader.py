@@ -1,19 +1,30 @@
-import sys
-import os
+import logging
 
-try:
-    import openvino
-    from optimum.intel import OVModelForSpeechSeq2Seq, OVModelForSeq2SeqLM
-    print(f"SUCCESS: OpenVINO version {openvino.__version__} and optimum-intel are ready.")
-except ImportError as e:
-    print(f"FAILURE: {e}")
-    sys.exit(1)
+"""
+Module for loading models and data.
+"""
 
-def load_optimized_models(asr_id="openai/whisper-tiny", nllb_id="facebook/nllb-200-distilled-600M"):
+# Configure logging
+logger = logging.getLogger(__name__)
+
+
+class DataLoader:
     """
-    Check if we can initialize the optimized loaders.
+    Professional Data Loader class.
     """
-    print(f"Ready to export/load {asr_id} and {nllb_id} with OpenVINO INT8.")
+    def __init__(self):
+        """
+        Initialize the data loader and check for optimum-intel.
+        """
+        try:
+            from optimum.intel import OVModelForSpeechSeq2Seq, OVModelForSeq2SeqLM  # noqa: F401
+            logger.info("Optimum Intel libraries loaded")
+        except ImportError:
+            logger.warning("Optimum Intel not available")
 
-if __name__ == "__main__":
-    load_optimized_models()
+    def load_data(self):
+        """
+        Simulation of data loading.
+        """
+        logger.info("Loading data...")
+        return {"samples": []}

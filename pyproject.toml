@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neodemo3"
+version = "0.1.0"
+description = "Professional Speech-to-Speech Optimization Pipeline"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "torch>=2.0.0",
+    "numpy<2.0.0",
+    "transformers>=4.36.0",
+    "optimum-intel[openvino]>=1.15.0",
+    "openvino>=2023.3.0",
+    "soundfile>=0.12.1",
+    "datasets>=2.16.0",
+    "librosa>=0.10.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.black]
+line-length = 100
+target-version = ['py312']
