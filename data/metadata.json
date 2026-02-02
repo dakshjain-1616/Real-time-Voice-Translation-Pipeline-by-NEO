@@ -1,0 +1,98 @@
+{
+    "en_clean": {
+        "file": "en_clean.wav",
+        "transcript": "Hello, how are you today?",
+        "lang": "en",
+        "category": "clean",
+        "translations": {
+            "en": "Hello, how are you today?",
+            "es": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
+            "fr": "Bonjour, comment allez-vous aujourd'hui?",
+            "de": "Hallo, wie geht es dir heute?"
+        }
+    },
+    "en_noise": {
+        "file": "en_noise.wav",
+        "transcript": "Hello, how are you today?",
+        "lang": "en",
+        "category": "background-noise",
+        "translations": {
+            "en": "Hello, how are you today?",
+            "es": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
+            "fr": "Bonjour, comment allez-vous aujourd'hui?",
+            "de": "Hallo, wie geht es dir heute?"
+        }
+    },
+    "es_clean": {
+        "file": "es_clean.wav",
+        "transcript": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
+        "lang": "es",
+        "category": "clean",
+        "translations": {
+            "en": "Hello, how are you today?",
+            "es": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
+            "fr": "Bonjour, comment allez-vous aujourd'hui?",
+            "de": "Hallo, wie geht es dir heute?"
+        }
+    },
+    "es_noise": {
+        "file": "es_noise.wav",
+        "transcript": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
+        "lang": "es",
+        "category": "background-noise",
+        "translations": {
+            "en": "Hello, how are you today?",
+            "es": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
+            "fr": "Bonjour, comment allez-vous aujourd'hui?",
+            "de": "Hallo, wie geht es dir heute?"
+        }
+    },
+    "fr_clean": {
+        "file": "fr_clean.wav",
+        "transcript": "Bonjour, comment allez-vous aujourd'hui?",
+        "lang": "fr",
+        "category": "clean",
+        "translations": {
+            "en": "Hello, how are you today?",
+            "es": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
+            "fr": "Bonjour, comment allez-vous aujourd'hui?",
+            "de": "Hallo, wie geht es dir heute?"
+        }
+    },
+    "fr_noise": {
+        "file": "fr_noise.wav",
+        "transcript": "Bonjour, comment allez-vous aujourd'hui?",
+        "lang": "fr",
+        "category": "background-noise",
+        "translations": {
+            "en": "Hello, how are you today?",
+            "es": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
+            "fr": "Bonjour, comment allez-vous aujourd'hui?",
+            "de": "Hallo, wie geht es dir heute?"
+        }
+    },
+    "de_clean": {
+        "file": "de_clean.wav",
+        "transcript": "Hallo, wie geht es dir heute?",
+        "lang": "de",
+        "category": "clean",
+        "translations": {
+            "en": "Hello, how are you today?",
+            "es": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
+            "fr": "Bonjour, comment allez-vous aujourd'hui?",
+            "de": "Hallo, wie geht es dir heute?"
+        }
+    },
+    "de_noise": {
+        "file": "de_noise.wav",
+        "transcript": "Hallo, wie geht es dir heute?",
+        "lang": "de",
+        "category": "background-noise",
+        "translations": {
+            "en": "Hello, how are you today?",
+            "es": "Hola, \u00bfc\u00f3mo est\u00e1s hoy?",
+            "fr": "Bonjour, comment allez-vous aujourd'hui?",
+            "de": "Hallo, wie geht es dir heute?"
+        }
+    }
+}

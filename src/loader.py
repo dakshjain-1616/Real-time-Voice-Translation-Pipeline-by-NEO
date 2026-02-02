@@ -1,30 +1,27 @@
-import logging
+import librosa
+import numpy as np
+import io
+import soundfile as sf
 
-"""
-Module for loading models and data.
-"""
-
-# Configure logging
-logger = logging.getLogger(__name__)
-
-
-class DataLoader:
+def load_audio(audio_input, target_sr=16000):
     """
-    Professional Data Loader class.
+    Load audio from file path or buffer and resample to target_sr.
     """
-    def __init__(self):
-        """
-        Initialize the data loader and check for optimum-intel.
-        """
-        try:
-            from optimum.intel import OVModelForSpeechSeq2Seq, OVModelForSeq2SeqLM  # noqa: F401
-            logger.info("Optimum Intel libraries loaded")
-        except ImportError:
-            logger.warning("Optimum Intel not available")
+    if isinstance(audio_input, str):
+        audio, _ = librosa.load(audio_input, sr=target_sr)
+    elif isinstance(audio_input, bytes):
+        audio_fp = io.BytesIO(audio_input)
+        audio, _ = librosa.load(audio_fp, sr=target_sr)
+    elif isinstance(audio_input, np.ndarray):
+        audio = audio_input
+    else:
+        raise ValueError("Unsupported audio input type")
+    
+    return audio
 
-    def load_data(self):
-        """
-        Simulation of data loading.
-        """
-        logger.info("Loading data...")
-        return {"samples": []}
+def save_audio(audio, path, sr=16000):
+    """Save numpy array to wav file."""
+    sf.write(path, audio, sr)
+
+if __name__ == "__main__":
+    print("Loader module ready.")

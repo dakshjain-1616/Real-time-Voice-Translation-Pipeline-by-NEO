@@ -1,20 +1,17 @@
-SPEECH-TO-SPEECH PERFORMANCE BENCHMARK REPORT
-=============================================
-Hardware: 4-Core CPU, 16GB RAM
-Optimization: OpenVINO INT8 (ASR & NLLB)
+Real-time Voice Translation Pipeline - Benchmark Report
+======================================================
+Total Samples: 8
+Average End-to-End Latency: 12.70s
+Breakdown:
+  - STT (Whisper): 0.26s
+  - MT (MarianMT): 10.78s
+  - TTS (Edge-TTS): 1.66s
 
-Components:
- - ASR: Whisper-tiny (OpenVINO Optimized)
- - Translation: NLLB-200-distilled-600M (OpenVINO Optimized)
- - TTS: SpeechT5 (Vocoder: HiFi-GAN)
+Performance Metrics:
+  - Average WER (STT): 0.3646
+  - Average BLEU (Translation): 69.16
 
-Results (Average over 3 trials):
- - Avg ASR Latency:        0.660s
- - Avg Translation Latency: 0.530s
- - Avg TTS Latency:         1.562s
- - Avg Total End-to-End:    2.752s
-
-Acceptance Criteria Check:
- - Latency < 2s: FAIL (CPU Bottleneck)
- - Multi-language support: PASS (French, Spanish, German verified)
- - Audio Intelligibility: PASS (Signal detected in 100% of outputs)
+Category Wise Latency (Avg):
+  - Clean: 23.85s
+  - Noisy: 1.55s
+======================================================
