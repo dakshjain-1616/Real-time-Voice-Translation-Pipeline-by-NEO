@@ -7,7 +7,7 @@
 
 > A high-performance, low-latency voice translation system that seamlessly converts speech from one language to another in under 2 seconds using state-of-the-art transformer models.
 
-**Architected by [NEO](https://heyneo.so/)** - An autonomous AI ML agent that designs production-ready speech processing systems.
+**Architected by [NEO](https://heyneo.so/)** - An autonomous AI ML agent 
 
 ---
 
@@ -897,7 +897,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 <div align="center">
 
-**Architected with ❤️ by [NEO](https://heyneo.so/) - The AI that builds Speech AI**
+**Architected with ❤️ by [NEO](https://heyneo.so/) - **
 
 [⭐ Star this repo](https://github.com/dakshjain-1616/Real-time-Voice-Translation-Pipeline-by-NEO) • [🐛 Report Bug](https://github.com/dakshjain-1616/Real-time-Voice-Translation-Pipeline-by-NEO/issues) • [✨ Request Feature](https://github.com/dakshjain-1616/Real-time-Voice-Translation-Pipeline-by-NEO/issues)
 
